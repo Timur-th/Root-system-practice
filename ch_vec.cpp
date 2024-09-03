@@ -125,7 +125,9 @@ int main() {
     }
     for (const auto & iter : result) {
         dim1 = iter;
-        for (int k = 0; k < n; k++) std::cout << dim1[k] << ' ';
+        for (int k = 0; k < n; k++) {
+            std::cout << dim1[k] << ' ';
+        }
         std::cout << '\n';
     }
     std::cout << result.size();
