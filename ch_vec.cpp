@@ -101,16 +101,15 @@ int main() {
     std::vector<long long> dim1(n, 0), dim2(n, 0), dim3(n, 0), ans;
     result.clear();
 
-    int i1, i2, i3;
-    for (i1 = 0; i1 < num; i1++) {
+    for (int i1 = 0; i1 < num; i1++) {
         for (i2 = 0; i2 < n; i2++) {
             std::cin >> hyplanes[i1][i2];
         }
     }
 
-    for (i1 = 0; i1 < num - 1; i1++) {
-        for (i2 = i1 + 1; i2 < num; i2++) {
-//            for (i3 = i2 + 1; i3 < num; i3++) {
+    for (int i1 = 0; i1 < num - 1; i1++) {
+        for (int i2 = i1 + 1; i2 < num; i2++) {
+//            for (int i3 = i2 + 1; i3 < num; i3++) {
                 {
                     for (int k = 0; k < n; k++) {
                         dim1[k] = hyplanes[i1][k];
